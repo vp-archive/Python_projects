@@ -1,7 +1,7 @@
+# This alarm has wake up call playing untile the user stops it manually.
 from tkinter import *
 import datetime
 import time
-# Removed: import winsound # winsound is Windows-specific
 from threading import *
 
 # Added imports for cross-platform sound playback and generation
@@ -102,7 +102,7 @@ def alarm():
 
     # Stop the music when stop_flag is set
     pygame.mixer.music.stop()
-    print("Alarm stopped. Good morning! ☀️")
+    print("Alarm stopped. Wakey Wakey!")
 
 def stop_alarm():
     # Removed: winsound.PlaySound(None, winsound.SND_PURGE)
